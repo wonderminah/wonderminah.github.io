@@ -1,0 +1,45 @@
+---
+title: "ESLint의 개념 및 사용 예시"
+date: 2020-08-19 23:09:00 +0900
+toc: true
+toc_icon: bars
+toc_sticky: true
+comments: true
+---
+# ESLint란 무엇인가?
+
+ESLint는 JavaScript 코드에서 발견 된 문제 패턴을 식별하기위한 정적 코드 분석 도구입니다. ESLint의 규칙은 구성 가능하며 사용자 정의 된 규칙을 정의하고로드 할 수 있습니다. ESLint는 코드 품질과 코딩 스타일 문제를 모두 다룹니다. [위키백과(영어)](https://en.wikipedia.org/wiki/ESLint)
+
+# 필요사항
+## npm 모듈 설치
+```bash
+npm install --save-dev babel-eslint
+npm install --save-dev eslint-config-airbnb
+npm install --save-dev eslint-plugin-import
+npm install --save-dev eslint-plugin-jsx-a11y
+npm install --save-dev eslint-plugin-react
+npm install --save-dev eslint-plugin-react-hooks
+```
+save-dev 옵션: 개발용으로만 사용하고 싶은 경우 추가.
+설치가 완료되면 package.json 내의 devDependencies에 모듈 네임이 추가된다.
+
+## Atom 패키지 설치
+https://atom.io/packages/linter-eslint
+위 url에서 linter-eslint 패키지를 atom에 install한다.
+
+# 사용예시
+## 문제 패턴을 식별한 경우
+![image-20200819233603148](https://wonderminah.github.io/assets/img/image-20200819233603148.png)
+문제 패턴을 식별하고 에러 메시지를 표시해 준다.
+상기 메시지에서는 styles가 정의되기 이전에 사용되었다고 알려주고 있으므로, const styles 변수를 function보다 윗 단계에서 먼저 정의한 후 사용하는 방식으로 변경하도록 해보자.
+그 후 ctrl+s를 누르면, 아래와 같이 자동으로 에러 메시지가 사라지게 된다.
+![image-20200819233924160](https://wonderminah.github.io/assets/img/image-20200819233924160.png)
+
+## 제시된 규칙을 따르지 않고 무시하고 싶을 경우
+아래와 같은 디렉토리 위치에 .eslintrc.json 파일을 생성 후, "rules" object에 "no-use-before-define" property를 0으로 설정한다.
+![image-20200819234253233](https://wonderminah.github.io/assets/img/image-20200819234253233.png)
+https://eslint.org/docs/rules/no-use-before-define
+
+# 참고자료
+* [Eslintで構文チェック](https://www.udemy.com/course/react-native-ios-android/learn/lecture/8436162#overview)
+* [Eslintの設定を変更する](https://www.udemy.com/course/react-native-ios-android/learn/lecture/8436168#overview)
