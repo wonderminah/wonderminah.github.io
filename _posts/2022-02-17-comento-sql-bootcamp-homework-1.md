@@ -15,7 +15,7 @@ Country 별로 ContactName이 ‘A’로 시작하는 Customer의 숫자를 세�
 |      | 내 답안                                                      | 리드멘토님 예시 답안                                         |
 | ---- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | 쿼리 | <code>SELECT <br/>	Country<br/>	, COUNT(*) as CustomersCountLikeA -- Customer의 숫자<br/>FROM Customers<br/>WHERE ContactName LIKE 'A%' -- ContactName이 'A'로 시작하는<br/>GROUP BY Country -- Contry 별로</code> | <code>SELECT<br/>	Country<br/>	, COUNT(1) cnt<br/>FROM Customers<br/>WHERE ContactName LIKE 'A%'<br/>GROUP BY Country;</code> |
-| 결과 | ![image-20220217020112226](/Users/minah.kim/Library/Application Support/typora-user-images/image-20220217020112226.png) | ![image-20220217021517909](/Users/minah.kim/Library/Application Support/typora-user-images/image-20220217021517909.png) |
+| 결과 | ![image-20220217020112226](https://wonderminah.github.io/assets/img/image-20220217020112226.png) | ![image-20220217021517909](https://wonderminah.github.io/assets/img/image-20220217021517909.png) |
 
 ### 차이점
 
@@ -36,7 +36,7 @@ Customer 별로 Order한 Product의 총 Quantity를 세는 쿼리를 작성하�
 |      | 내 답안                                                      | 리드멘토님 예시 답안                                         |
 | ---- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | 쿼리 | <code>SELECT <br/>	O.CustomerID<br/>	, SUM(OD.Quantity) AS SumQuantity -- Order한 Product의 총 Quantity<br/>FROM OrderDetails OD<br/>LEFT JOIN Orders O ON OD.OrderID = O.OrderID<br/>GROUP BY O.CustomerID -- Customer 별로</code> | <code>SELECT <br/>	a.CustomerID<br/>	, SUM(b.Quantity)<br/>FROM Orders a <br/>LEFT JOIN OrderDetails b on a.OrderId = b.OrderId<br/>GROUP BY a.CustomerID;</code> |
-| 결과 | ![image-20220217020820947](/Users/minah.kim/Library/Application Support/typora-user-images/image-20220217020820947.png) | ![image-20220217021635943](/Users/minah.kim/Library/Application Support/typora-user-images/image-20220217021635943.png) |
+| 결과 | ![image-20220217020820947](https://wonderminah.github.io/assets/img/image-20220217020820947.png) | ![image-20220217021635943](https://wonderminah.github.io/assets/img/image-20220217021635943.png) |
 
 ## 차이점
 
@@ -54,7 +54,7 @@ Customer 별로 Order한 Product의 총 Quantity를 세는 쿼리를 작성하�
 |      | 내 답안                                                      | 리드멘토님 예시 답안                                         |
 | ---- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | 쿼리 | <code>SELECT <br/>	DATE_FORMAT(O.OrderDate, '%Y-%m') AS 'YearMonth'<br/>	, E.EmployeeID<br/>	, COUNT(DISTINCT OD.ProductID) AS 'DistinctCountOfProducts'<br/>FROM Orders O <br/>LEFT JOIN OrderDetails OD ON O.OrderID = OD.OrderID<br/>LEFT JOIN Employees E ON O.EmployeeID = E.EmployeeID<br/>GROUP BY YearMonth, EmployeeID<br/>ORDER BY YearMonth ASC, EmployeeID ASC</code> | <code>SELECT <br/>	SUBSTR(a.OrderDate,1,7) ym<br/>	, a.EmployeeID<br/>	, SUM(b.Quantity) sumOfQuantity<br/>FROM Orders a<br/>	LEFT JOIN OrderDetails b ON a.OrderID = b.OrderID<br/>GROUP BY SUBSTR(a.OrderDate,1,7), a.EmployeeID;</code> |
-| 결과 | ![image-20220217021935851](/Users/minah.kim/Library/Application Support/typora-user-images/image-20220217021935851.png) | ![image-20220217022116907](/Users/minah.kim/Library/Application Support/typora-user-images/image-20220217022116907.png) |
+| 결과 | ![image-20220217021935851](https://wonderminah.github.io/assets/img/image-20220217021935851.png) | ![image-20220217022116907](https://wonderminah.github.io/assets/img/image-20220217022116907.png) |
 
 ### 차이점
 
