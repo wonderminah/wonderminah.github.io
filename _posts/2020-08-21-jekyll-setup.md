@@ -5,6 +5,7 @@ toc: true
 toc_icon: bars
 toc_sticky: true
 comments: true
+tags: [jekyll]
 ---
 
 # 최소한의 구축 과정

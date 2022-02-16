@@ -5,6 +5,7 @@ toc: true
 toc_icon: bars
 toc_sticky: true
 comments: true
+tags: [jekyll, python]
 ---
 
 # 문제의 발단

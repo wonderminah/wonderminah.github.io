@@ -5,6 +5,7 @@ toc: true
 toc_icon: bars
 toc_sticky: true
 comments: true
+tags: [jekyll, google-analytics]
 ---
 
 # Google Analytics 계정 만들기

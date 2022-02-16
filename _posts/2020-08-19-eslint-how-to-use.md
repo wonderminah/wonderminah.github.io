@@ -5,6 +5,7 @@ toc: true
 toc_icon: bars
 toc_sticky: true
 comments: true
+tags: [javascript]
 ---
 # ESLint란 무엇인가?
 
