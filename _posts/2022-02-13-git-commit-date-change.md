@@ -10,7 +10,7 @@ tags: [git]
 
 # git commit 시간 변경하기
 
-### git log
+## git log
 
 ```bash
 git log
@@ -40,7 +40,7 @@ Date:   Sun Feb 13 22:47:04 2022 +0900
 ca7368ba 커밋을 고치고 싶다고 가정하자.
 이 경우, 그 이전의 커밋 e5e5b5ed을 복사하여 아래와 같이 실행한다.
 
-### git rebase -i {커밋}, edit
+## git rebase -i {커밋}, edit
 
 ```bash
 git rebase -i e5e5b5edad276ac1e45357adec1a053cdf330edf
@@ -101,7 +101,7 @@ Once you are satisfied with your changes, run
   git rebase --continue
 ```
 
-### git commit --amend --date={일시}
+## git commit --amend --date={일시}
 
 아래와 같이 수정하고 싶은 일시를 지정하여 커밋을 수정한다.
 
@@ -122,7 +122,7 @@ Date:   Thu Feb 10 19:21:23 2022 +0000
     Add validation
 ```
 
-### git rebase --continue
+## git rebase --continue
 
 git rebase --continue를 실행하여, 수정을 완료한다.
 
