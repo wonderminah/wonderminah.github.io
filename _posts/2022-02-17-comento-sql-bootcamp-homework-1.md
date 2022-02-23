@@ -93,7 +93,7 @@ GROUP BY a.CustomerID;
 * 내 답안: OrderDetails 테이블을 FROM절에 두고, Orders 테이블을 LEFT JOIN함
 * 리드멘토님 예시 답안: Orders 테이블을 FROM절에 두고, OrderDetails 테이블을 LEFT JOIN함
 
-#### 두 테이블을 JOIN할 경우 FROM절과 JOIN절의 위치에 따른 차이 / 각 절에 두어야 하는 테이블은?
+**두 테이블을 JOIN할 경우 FROM절과 JOIN절의 위치에 따른 차이 / 각 절에 두어야 하는 테이블은?**
 
 <strong style="color: red;">TODO</strong>
 
@@ -146,4 +146,5 @@ LEFT JOIN OrderDetails b ON a.OrderID = b.OrderID
   * 나의 경우 SELECT Employees.EmployeeID
   * 리드멘토님의 경우 Orders.EmployeeID
 
-이에 대해서는 별다른 피드백은 없으셨으나, Orders 테이블에도 EmployeeID가 있었으므로, (내 쿼리의 경우) 굳이 별도로 LEFT JOIN Employees 을 할 필요는 없었다고 생각된다.
+이에 대해서는 별다른 피드백은 없으셨으나, Orders 테이블에도 EmployeeID가 있었으므로,   
+(내 쿼리의 경우) 굳이 별도로 LEFT JOIN Employees 을 할 필요는 없었다고 생각된다.
