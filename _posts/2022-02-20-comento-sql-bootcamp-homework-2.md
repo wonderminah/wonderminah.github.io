@@ -217,7 +217,7 @@ select f.employee_id
 from       (select distinct employee_id 
             from orders 
             where '2006-01' <= date_format(order_date, '%Y-%m') and 
-            									 date_format(order_date, '%Y-%m') <= '2006-03') f -- 1분기
+                               date_format(order_date, '%Y-%m') <= '2006-03') f -- 1분기
 inner join (select distinct employee_id 
             from orders 
             where '2006-04' <= date_format(order_date, '%Y-%m') and 
