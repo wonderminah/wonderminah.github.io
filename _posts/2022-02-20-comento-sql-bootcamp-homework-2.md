@@ -304,5 +304,5 @@ group by 1, 2;
 
 ## 새로 알게 된 점
 
-* GROUP BY 1, 2를 쓰면, SELECT 절의 1번째 취득 컬럼, 2번째 취득 컬럼을 참조하게 된다.
-  https://stackoverflow.com/questions/7392730/what-does-sql-clause-group-by-1-mean
+* GROUP BY 1, 2를 쓰면, SELECT 절의 1번째 취득 컬럼, 2번째 취득 컬럼을 참조하게 된다.   
+  [What does SQL clause group by 1 mean](https://stackoverflow.com/questions/7392730/what-does-sql-clause-group-by-1-mean)
