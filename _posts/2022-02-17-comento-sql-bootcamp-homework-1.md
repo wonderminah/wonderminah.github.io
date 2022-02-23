@@ -18,8 +18,8 @@ Country 별로 ContactName이 ‘A’로 시작하는 Customer의 숫자를 세�
 
 ```sql
 SELECT
-	Country
-	, COUNT(*) as CustomersCountLikeA -- Customer의 숫자
+    Country
+    , COUNT(*) as CustomersCountLikeA -- Customer의 숫자
 FROM Customers
 WHERE ContactName LIKE 'A%' -- ContactName이 'A'로 시작하는
 GROUP BY Country -- Contry 별로
@@ -31,8 +31,8 @@ GROUP BY Country -- Contry 별로
 
 ```sql
 SELECT
-	Country
-	, COUNT(1) cnt
+    Country
+    , COUNT(1) cnt
 FROM Customers
 WHERE ContactName LIKE 'A%'
 GROUP BY Country;
@@ -62,8 +62,8 @@ Customer 별로 Order한 Product의 총 Quantity를 세는 쿼리를 작성하�
 
 ```sql
 SELECT
-	O.CustomerID
-	, SUM(OD.Quantity) AS SumQuantity -- Order한 Product의 총 Quantity
+    O.CustomerID
+    , SUM(OD.Quantity) AS SumQuantity -- Order한 Product의 총 Quantity
 FROM OrderDetails OD
 LEFT JOIN Orders O ON OD.OrderID = O.OrderID
 GROUP BY O.CustomerID -- Customer 별로
@@ -75,8 +75,8 @@ GROUP BY O.CustomerID -- Customer 별로
 
 ```sql
 SELECT
-	a.CustomerID
-	, SUM(b.Quantity)
+    a.CustomerID
+    , SUM(b.Quantity)
 FROM Orders a
 LEFT JOIN OrderDetails b on a.OrderId = b.OrderId
 GROUP BY a.CustomerID;
@@ -103,9 +103,9 @@ GROUP BY a.CustomerID;
 
 ```sql
 SELECT
-	DATE_FORMAT(O.OrderDate, '%Y-%m') AS 'YearMonth'
-	, E.EmployeeID
-	, COUNT(DISTINCT OD.ProductID) AS 'DistinctCountOfProducts'
+    DATE_FORMAT(O.OrderDate, '%Y-%m') AS 'YearMonth'
+    , E.EmployeeID
+    , COUNT(DISTINCT OD.ProductID) AS 'DistinctCountOfProducts'
 FROM Orders O
 LEFT JOIN OrderDetails OD ON O.OrderID = OD.OrderID
 LEFT JOIN Employees E ON O.EmployeeID = E.EmployeeID
@@ -119,9 +119,9 @@ ORDER BY YearMonth ASC, EmployeeID ASC
 
 ```sql
 SELECT
-	SUBSTR(a.OrderDate,1,7) ym
-	, a.EmployeeID
-	, SUM(b.Quantity) sumOfQuantity
+    SUBSTR(a.OrderDate,1,7) ym
+    , a.EmployeeID
+    , SUM(b.Quantity) sumOfQuantity
 FROM Orders a
 LEFT JOIN OrderDetails b ON a.OrderID = b.OrderID
 ```
