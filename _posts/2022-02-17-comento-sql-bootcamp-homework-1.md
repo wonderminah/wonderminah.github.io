@@ -14,9 +14,7 @@ Country 별로 ContactName이 ‘A’로 시작하는 Customer의 숫자를 세�
 
 * 배울 점: COUNT(*)과 COUNT(1)
 
-## 답안 비교
-
-### 내 답안
+## 내 답안
 
 ```sql
 SELECT
@@ -29,7 +27,7 @@ GROUP BY Country -- Contry 별로
 
 ![image-20220217020112226](https://wonderminah.github.io/assets/img/image-20220217020112226.png)
 
-### 예시 답안
+## 예시 답안
 
 ```sql
 SELECT
@@ -60,9 +58,7 @@ Customer 별로 Order한 Product의 총 Quantity를 세는 쿼리를 작성하�
 
 * 배울 점: JOIN, GROUP BY
 
-## 답안 비교
-
-### 내 답안
+## 내 답안
 
 ```sql
 SELECT
@@ -75,7 +71,7 @@ GROUP BY O.CustomerID -- Customer 별로
 
 ![image-20220217020820947](https://wonderminah.github.io/assets/img/image-20220217020820947.png)
 
-### 예시 답안
+## 예시 답안
 
 ```sql
 SELECT
@@ -103,9 +99,7 @@ GROUP BY a.CustomerID;
 
 * 배울 점: DATE_FORMAT()
 
-## 답안 비교
-
-### 내 답안
+## 내 답안
 
 ```sql
 SELECT
@@ -121,7 +115,7 @@ ORDER BY YearMonth ASC, EmployeeID ASC
 
 ![image-20220217021935851](https://wonderminah.github.io/assets/img/image-20220217021935851.png)
 
-### 예시 답안
+## 예시 답안
 
 ```sql
 SELECT
@@ -147,4 +141,4 @@ LEFT JOIN OrderDetails b ON a.OrderID = b.OrderID
   * 리드멘토님의 경우 Orders.EmployeeID
 
 이에 대해서는 별다른 피드백은 없으셨으나, Orders 테이블에도 EmployeeID가 있었으므로,   
-(내 쿼리의 경우) 굳이 별도로 LEFT JOIN Employees 을 할 필요는 없었다고 생각된다.
+굳이 별도로 LEFT JOIN Employees 을 할 필요는 없었다고 생각된다.

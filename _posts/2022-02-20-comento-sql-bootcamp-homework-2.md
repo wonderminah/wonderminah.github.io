@@ -12,9 +12,7 @@ tags: [comento-bootcamp, sql]
 
 상품(product)의 카테고리(category)별로, 상품 수와 평균 가격대(list_price)를 찾는 쿼리를 작성하세요.
 
-## 답안 비교
-
-### 내 답안
+## 내 답안
 
 ```sql
 SELECT 
@@ -27,7 +25,7 @@ GROUP BY category -- 상품(product)의 카테고리(category)별로
 
 ![image-20220221002755980](/Users/minah.kim/Library/Application Support/typora-user-images/image-20220221002755980.png)
 
-### 예시 답안
+## 예시 답안
 
 ```sql
 select 
@@ -46,11 +44,10 @@ group by category;
 
 # 2번 문제
 
-2006년 1분기에 고객(customer)별 주문(order) 횟수, 주문한 상품(product)의 카테고리(category) 수, 총 주문 금액(quantity * unit_price)을 찾는 쿼리를 작성하세요. (힌트: join)
+2006년 1분기에 고객(customer)별 주문(order) 횟수, 주문한 상품(product)의 카테고리(category) 수,    
+총 주문 금액(quantity * unit_price)을 찾는 쿼리를 작성하세요. (힌트: join)
 
-## 답안 비교
-
-### 내 답안
+## 내 답안
 
 ```sql
 select
@@ -70,7 +67,7 @@ group by c.id -- 고객(customer)별
 
 ![image-20220221002832377](/Users/minah.kim/Library/Application Support/typora-user-images/image-20220221002832377.png)
 
-### 예시 답안
+## 예시 답안
 
 ```sql
 select 
@@ -99,11 +96,10 @@ group by o.customer_id;
 
 # 3번 문제
 
-2006년 3월에 주문(order)된 건의 주문 상태(status_name)를 찾는 쿼리를 작성하세요. (join을 사용하지 않고 쿼리를 작성하세요.) (힌트: orders_status 사용, sub-query)
+2006년 3월에 주문(order)된 건의 주문 상태(status_name)를 찾는 쿼리를 작성하세요.   
+(join을 사용하지 않고 쿼리를 작성하세요.) (힌트: orders_status 사용, sub-query)
 
-## 답안 비교
-
-### 내 답안
+## 내 답안
 
 ```sql
 -- sub query 사용시의 쿼리
@@ -126,7 +122,7 @@ where date_format(o.order_date, '%Y%m') = '200603' -- 2006년 3월에 주문(ord
 
 ![image-20220221002854602](/Users/minah.kim/Library/Application Support/typora-user-images/image-20220221002854602.png)
 
-### 예시 답안
+## 예시 답안
 
 ```sql
 -- sub query 사용시의 쿼리
@@ -155,11 +151,10 @@ where '2006-03-01' <= o.order_date and o.order_date < '2006-04-01';
 
 # 4번 문제
 
-2006년 1분기 동안 세 번 이상 주문(order) 된 상품(product)과 그 상품의 주문 수를 찾는 쿼리를 작성하세요. (order_status는 신경쓰지 않으셔도 됩니다.) (힌트: sub-query or having)
+2006년 1분기 동안 세 번 이상 주문(order) 된 상품(product)과 그 상품의 주문 수를 찾는 쿼리를 작성하세요.    
+(order_status는 신경쓰지 않으셔도 됩니다.) (힌트: sub-query or having)
 
-## 답안 비교
-
-### 내 답안
+## 내 답안
 
 ```sql
 -- having을 사용
@@ -177,7 +172,7 @@ having count(od.id) >= 3 -- 세 번 이상 주문(order) 된
 
 ![image-20220221002933728](/Users/minah.kim/Library/Application Support/typora-user-images/image-20220221002933728.png)
 
-### 예시 답안
+## 예시 답안
 
 ```sql
 -- join 사용시의 쿼리
@@ -212,11 +207,10 @@ where cnt >= 3
 
 # 5-1번 문제
 
-2006년 1분기, 2분기 연속으로 주문(order)을 받은 직원(employee)을 찾는 쿼리를 작성하세요. (order_status는 신경쓰지 않으셔도 됩니다.) (힌트: sub-query, inner join)
+2006년 1분기, 2분기 연속으로 주문(order)을 받은 직원(employee)을 찾는 쿼리를 작성하세요.   
+(order_status는 신경쓰지 않으셔도 됩니다.) (힌트: sub-query, inner join)
 
-## 답안 비교
-
-### 내 답안
+## 내 답안
 
 ```sql
 select f.employee_id
@@ -233,7 +227,7 @@ on f.employee_id = s.employee_id
 
 ![image-20220221002942139](/Users/minah.kim/Library/Application Support/typora-user-images/image-20220221002942139.png)
 
-### 예시 답안
+## 예시 답안
 
 ```sql
 select o1.employee_id
@@ -254,13 +248,12 @@ on o1.employee_id = o2.employee_id;
 
 # 5-2번 문제
 
-2006년 1분기, 2분기 연속으로 주문(order)을 받은 직원(employee)별로, 2006년 월별 주문 수를 찾는 쿼리를 작성하세요. (order_status는 신경쓰지 않으셔도 됩니다.) (힌트: sub-query 중첩, date_format() )
+2006년 1분기, 2분기 연속으로 주문(order)을 받은 직원(employee)별로, 2006년 월별 주문 수를 찾는 쿼리를 작성하세요.  
+(order_status는 신경쓰지 않으셔도 됩니다.) (힌트: sub-query 중첩, date_format() )
 
 * 새로 배운 점: group 1, 2
 
-## 답안 비교
-
-### 내 답안
+## 내 답안
 
 ```sql
 select 
@@ -283,7 +276,7 @@ group by employee_id, date_format(order_date, '%Y-%m')
 
 ![image-20220221003003296](/Users/minah.kim/Library/Application Support/typora-user-images/image-20220221003003296.png)
 
-### 예시 답안
+## 예시 답안
 
 ```sql
 select 
