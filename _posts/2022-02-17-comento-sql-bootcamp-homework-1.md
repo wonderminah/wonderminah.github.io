@@ -45,7 +45,7 @@ GROUP BY Country;
 * 내 답안: COUNT(*)을 사용
 * 리드멘토님 예시 답안: COUNT(1)을 사용
 
-#### COUNT(*)과 COUNT(1)의 차이?
+**COUNT(*)과 COUNT(1)의 차이?**
 
 * count(*): NULL 값에 상관없이 모든 행을 카운트한다.
 * count(1): NULL 값이 들어간 행은 카운트하지 않는다.
