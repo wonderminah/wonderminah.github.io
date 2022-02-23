@@ -88,6 +88,13 @@ body {
 }
 
 .page__content {
+  /* h1 배경을 회색으로 커스텀 */
+  h1 {
+    background-color: grey;
+    color: white;
+    padding: 6px;
+  }
+
   h2 {
     padding-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
