@@ -36,6 +36,9 @@ h6 {
 h1 {
   margin-top: 0;
   font-size: $h-size-1;
+  background-color: grey; /* 추가 */
+  color: white; /* 추가 */
+  padding: 6px; /* 추가 */
 }
 
 h2 {
