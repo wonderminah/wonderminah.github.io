@@ -1,5 +1,5 @@
 ---
-title: "Reference for Data Analytics"
+title: "Reference for Data Analysis"
 date: 2022-02-23 17:00:00 +0900
 toc: true
 toc_icon: bars
