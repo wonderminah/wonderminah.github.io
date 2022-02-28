@@ -56,7 +56,7 @@ select
     -- 총 주문 금액(quantity * unit_price) -- 주문 이력이 없는 customer는 0.00으로 처리
     , if (sum(od.quantity * od.unit_price) is null
         , 0.00
-        , sum(od.quantity * od.unit_price)) as 'total ordered amount'
+        , sum(od.quantity * od.unit_price)) as 'total order value'
     , count(distinct p.category) -- 주문한 상품(product)의 카테고리(category) 수
 from customers c
 left join orders o on o.customer_id = c.id
