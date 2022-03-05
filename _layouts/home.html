@@ -5,17 +5,12 @@ layout: default
 <div class="initial-content" style="height: auto !important;">
   <div class="page__hero--overlay" style="background-color: #5e616c; background-image: url('/minimal-mistakes/assets/images/mm-home-page-feature.jpg');">
     <div class="wrapper">
-      <h1 id="page-title" class="page__title" itemprop="headline">Minimal Mistakes</h1>
+      <h1 id="page-title" class="page__title" itemprop="headline">Minah Kim | Software Engineer</h1>
       <p class="page__lead">
         A flexible two-column Jekyll theme. Perfect for building personal sites, blogs, andportfolios.<br>
-        <small>
-          <a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/4.24.0">Latestrelease v4.24.0</a>
-        </small>
       </p>
       <p>
-        <a href="/minimal-mistakes/docs/quick-start-guide/" class="btn btn--light-outline btn--large">
-          <i class="fas fa-download"></i> Install now
-        </a>
+        <a href="/about/" class="btn btn--light-outline btn--large">About</a>
       </p>
     </div>
   </div>
@@ -24,45 +19,79 @@ layout: default
       <meta itemprop="description" content="A flexible two-column Jekyll theme. Perfect for building personal sites, blogs, and portfolios. Latest release v4.24.0">
       <section class="page__content" itemprop="text">
         <div class="feature__wrapper">
+
+          <!-- 최근 포스트 -->
+          {% assign posts = site.posts %}
           <div class="feature__item">
             <div class="archive__item">
-              <div class="archive__item-teaser">
+              <!-- <div class="archive__item-teaser">
                 <img src="/minimal-mistakes/assets/images/mm-customizable-feature.png" alt="customizable">
-              </div>
+              </div> -->
               <div class="archive__item-body">
-                <h2 class="archive__item-title">Super customizable</h2>
-                <div class="archive__item-excerpt">
-                  <p>Everything from the menus, sidebars, comments, and more can be configured or set with YAML Front Matter.</p>
+                <h2 class="archive__item-title">Recent</h2>
+                <div class="archive__item-excerpt" style="margin: 1.414em 0;">
+                  {% for post in posts %}
+                    <li style="padding: 0.25em 0"><a href="{{ post.url }}">{{ post.title | truncate: 35 }}</a></li>                    
+                  {% endfor %}
                 </div>
-                <p><a href="/minimal-mistakes/docs/configuration/" class="btn btn--primary">Learn more</a></p>
+                <!-- <p><a href="/minimal-mistakes/docs/configuration/" class="btn btn--primary">Read more</a></p> -->
               </div>
             </div>
           </div>
+
+          <!-- 태그 -->
+          {% assign tags_max = 0 %}
+          {% for tag in site.tags %}
+            {% if tag[1].size > tags_max %}
+              {% assign tags_max = tag[1].size %}
+            {% endif %}
+          {% endfor %}
           <div class="feature__item">
             <div class="archive__item">
-              <div class="archive__item-teaser">
+              <!-- <div class="archive__item-teaser">
                 <img src="/minimal-mistakes/assets/images/mm-responsive-feature.png" alt="fully responsive">
-              </div>
+              </div> -->
               <div class="archive__item-body">
-                <h2 class="archive__item-title">Responsive layouts</h2>
-                <div class="archive__item-excerpt">
-                  <p>Built with HTML5 + CSS3. All layouts are fully responsive with helpers to augment your content.</p>
-                </div>
-                <p><a href="/minimal-mistakes/docs/layouts/" class="btn btn--primary">Learn more</a></p>
+                <h2 class="archive__item-title">Tags</h2>
+                <ul class="taxonomy__index" style="grid-template-columns: none; display: block;">
+                  {% for i in (1..tags_max) reversed %}
+                    {% for tag in site.tags %}
+                      {% if tag[1].size == i %}
+                        <li>
+                          <a href="#{{ tag[0] | slugify }}">
+                            <strong>{{ tag[0] }}</strong> <span class="taxonomy__count">{{ i }}</span>
+                          </a>
+                        </li>
+                      {% endif %}
+                    {% endfor %}
+                  {% endfor %}
+                </ul>
+                <!-- <p><a href="/minimal-mistakes/docs/layouts/" class="btn btn--primary">Read more</a></p> -->
               </div>
             </div>
           </div>
+
+          <!-- 아카이브 -->
+          {% assign postsInYearAndMonth = site.posts | where_exp: "item", "item.hidden != true" | group_by_exp: 'post', 'post.date | date: "%Y/%m"' %}
           <div class="feature__item">
             <div class="archive__item">
-              <div class="archive__item-teaser">
+              <!-- <div class="archive__item-teaser">
                 <img src="/minimal-mistakes/assets/images/mm-free-feature.png" alt="100% free">
-              </div>
+              </div> -->
               <div class="archive__item-body">
-                <h2 class="archive__item-title">100% free</h2>
-                <div class="archive__item-excerpt">
-                  <p>Free to use however you want under the MIT License. Clone it, fork it, customize it… whatever!</p>
-                </div>
-                <p><a href="/minimal-mistakes/docs/license/" class="btn btn--primary">Learn more</a></p>
+                <h2 class="archive__item-title">Archive</h2>
+                <ul class="taxonomy__index" style="grid-template-columns: none; display: block;">
+                  {% assign postsInYearAndMonth = site.posts | where_exp: "item", "item.hidden != true" | group_by_exp: 'post', 'post.date | date: "%Y/%m"' %}
+                  {% for yearAndMonth in postsInYearAndMonth %}
+                    <li>
+                      <a href="#{{ yearAndMonth.name }}">
+                        <strong>{{ yearAndMonth.name }}</strong> <span class="taxonomy__count">{{ yearAndMonth.items | size }}</span>
+                      </a>
+                    </li>
+                  {% endfor %}
+                </ul>
+                
+                <!-- <p><a href="/minimal-mistakes/docs/license/" class="btn btn--primary">Read more</a></p> -->
               </div>
             </div>
           </div>
