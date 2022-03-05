@@ -1,8 +1,5 @@
 ---
 layout: default
-toc: true
-toc_icon: bars
-toc_sticky: true
 ---
 
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
@@ -18,12 +15,120 @@ toc_sticky: true
 {% endif %}
 
 <div id="main" role="main">
-  {% include profile.html %}
-
-  <div class="archive">
-    {% unless page.header.overlay_color or page.header.overlay_image %}
-      <h1 id="page-title" class="page__title">{{ page.title }}</h1>
-    {% endunless %}
-    {{ content }}
-  </div>
+    <!-- 좌측 레이아웃 -->
+    {% include profile.html %}
+    <!-- 우측 레이아웃-->
+    <article class="page h-entry" style="padding-right: 0;" itemscope itemtype="https://schema.org/CreativeWork">
+        <div class="page__inner-wrap">
+            <section class="about" itemprop="text">
+                <!-- 교육사항 -->
+                <h2>Education</h2>
+                <div class="item">
+                    <div class="left-column">
+                        <p>2017.09 - 2018.08</p>
+                    </div>
+                    <div class="right-column">
+                        <p class="title">Dankook University</p>
+                        <p class="description">
+                            • Bachelor's degree, Business Administration<br>
+                            • 3.95/4.5 GPA<br>
+                        </p>
+                    </div>
+                </div>
+                <!-- 경력사항 -->
+                <h2>Experience</h2>
+                <div class="item">
+                    <div class="left-column">
+                        <p>2018.09 - Present</p>
+                    </div>
+                    <div class="right-column">
+                        <p class="title">Software Engineer</p>
+                        <p class="description">
+                            • Develop new features and maintain web application using Php, MySQL, CentOS<br>
+                            • Implement Web Analytics, Ad Tag, SEO<br>
+                            • Build database and server monitoring dashboards using Grafana, MySQL, Prometheous, Loki<br>
+                            • Review source code as a middle level member<br>
+                            • Handle security audit issue<br>
+                            • Lead medium scale project and take part in planning, task assignment, schedule management<br>
+                            • Support newcomer on-boarding training as a mentor<br>
+                            • Cooperate with non-technical stakeholders in Japanese<br>
+                            • Technical support in the middle of non-technical stakeholders and India team engineers in English<br>
+                        </p>
+                    </div>
+                </div>
+                <!-- 자격증 -->
+                <h2>Certification</h2>
+                <div class="item">
+                    <div class="left-column">
+                        <p>2013.02</p>
+                    </div>
+                    <div class="right-column">
+                        <p class="title">Microsoft Office Specialist Master Certification (MOS)</p>
+                        <p class="description">
+                            • Microsoft<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="left-column">
+                        <p>2018.05</p>
+                    </div>
+                    <div class="right-column">
+                        <p class="title">Engineer Information Processing</p>
+                        <p class="description">
+                            • Human Resources Development Service of Korea<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="left-column">
+                        <p>2022.01</p>
+                    </div>
+                    <div class="right-column">
+                        <p class="title">Python 3 Basic Grammar Certification</p>
+                        <p class="description">
+                            • Python Engineer Development Association<br>
+                        </p>
+                    </div>
+                </div>
+                <!-- 외국어 -->
+                <h2>Languages</h2>
+                <div class="item">
+                    <div class="left-column">
+                        <p>Korean</p>
+                    </div>
+                    <div class="right-column">
+                        <p class="title">Native or bilingual proficiency</p>
+                        <p class="description">
+                            • Native Speaker | Born and raised in South Korea
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="left-column">
+                        <p>Japanese</p>
+                    </div>
+                    <div class="right-column">
+                        <p class="title">Professional working proficiency</p>
+                        <p class="description">
+                            • JLPT N1<br>
+                            • OPIc Japanese Intermediate High<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="left-column">
+                        <p>English</p>
+                    </div>
+                    <div class="right-column">
+                        <p class="title">Limited working proficiency</p>
+                        <p class="description">
+                            • TOEIC 920<br>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </article>
 </div>
+

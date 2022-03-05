@@ -1,0 +1,37 @@
+.about {
+    p {
+        font-family: $global-font-family;
+        color: #6f777d;
+        
+    }
+    h2 {
+    color: #646769;
+    border-bottom: 1px solid #f2f3f3;
+    background-color: rgb(242, 242, 242);
+    padding: 0.5%;
+    margin: 0;
+    }
+    .item {
+    display: flex;
+        .left-column {
+            width: 20%;
+        }
+        .right-column {
+            width: 80%;
+            padding-left: 15px;
+            
+            @include breakpoint($large) {
+            padding-left: 0;
+            }
+            @include breakpoint($x-large) {
+            padding-left: 0;
+            }
+        }
+        .title {
+            font-weight: bold;
+        }
+        .description {
+            font-size: 15px;
+        }
+    } 
+}

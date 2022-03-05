@@ -358,3 +358,16 @@ input[type="submit"],
   -webkit-transition: $global-transition;
   transition: $global-transition;
 }
+
+/*
+    Minah Custom Global
+    ========================================================================== */
+.page, .archive {
+  @include breakpoint($large) {
+    padding-left: 1%;
+  }
+
+  @include breakpoint($x-large) {
+    padding-left: 1%;
+  }
+}
