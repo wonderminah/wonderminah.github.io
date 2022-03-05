@@ -2,5 +2,16 @@
 title: About
 permalink: /about/
 layout: about
-author_profile: true
+toc: true
+toc_icon: bars
+toc_sticky: true
 ---
+# Summary
+
+# Experience
+
+# Education
+
+# Licenses & Certifications
+
+# Languages
