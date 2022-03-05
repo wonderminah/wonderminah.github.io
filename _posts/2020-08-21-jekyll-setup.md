@@ -1,11 +1,6 @@
 ---
 title: "jekyll 블로그 초기구축 로그"
 date: 2020-08-21 01:12:00 +0900
-toc: true
-toc_icon: bars
-toc_sticky: true
-comments: true
-author_profile: false
 tags: [jekyll]
 ---
 

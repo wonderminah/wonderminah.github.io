@@ -1,11 +1,6 @@
 ---
 title: "ESLint의 개념 및 사용 예시"
 date: 2020-08-19 23:09:00 +0900
-toc: true
-toc_icon: bars
-toc_sticky: true
-comments: true
-author_profile: false
 tags: [javascript]
 ---
 # ESLint란 무엇인가?

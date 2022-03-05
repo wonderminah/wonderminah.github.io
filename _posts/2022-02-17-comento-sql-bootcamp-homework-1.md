@@ -1,11 +1,6 @@
 ---
 title: "코멘토 SQL 입문부터 활용까지 - 데이터 분석 보고서 작성과 대시보드 개발 - 1주차 과제"
 date: 2022-02-17 01:59:00 +0900
-toc: true
-toc_icon: bars
-toc_sticky: true
-comments: true
-author_profile: false
 tags: [comento-bootcamp, sql]
 ---
 

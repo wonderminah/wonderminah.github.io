@@ -1,11 +1,6 @@
 ---
 title: "git commit 시간 변경하기"
 date: 2022-02-17 01:17:00 +0900
-toc: true
-toc_icon: bars
-toc_sticky: true
-comments: true
-author_profile: false
 tags: [git]
 ---
 

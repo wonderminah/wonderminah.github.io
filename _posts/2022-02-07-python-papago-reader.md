@@ -1,11 +1,6 @@
 ---
 title: "파이썬과 파파고를 이용한 영어문장 자동재생 스크립트"
 date: 2022-02-07 01:37:00 +0900
-toc: true
-toc_icon: bars
-toc_sticky: true
-comments: true
-author_profile: false
 tags: [python]
 ---
 

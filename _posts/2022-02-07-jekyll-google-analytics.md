@@ -1,11 +1,6 @@
 ---
 title: "jekyll 블로그에 Google Analytics 도입"
 date: 2022-02-07 08:49:00 +0900
-toc: true
-toc_icon: bars
-toc_sticky: true
-comments: true
-author_profile: false
 tags: [jekyll, google-analytics]
 ---
 
