@@ -39,4 +39,6 @@ gem "jekyll-gist", "~> 1.5"
 
 gem "jekyll-include-cache", "~> 0.2.1"
 
+gem "jekyll-archives"
+
 gem "minimal-mistakes-jekyll"
