@@ -1,22 +1,73 @@
 ---
-layout: archive
+layout: default
 ---
 
-{{ content }}
-
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
-
-{% if paginator %}
-  {% assign posts = paginator.posts %}
-{% else %}
-  {% assign posts = site.posts %}
-{% endif %}
-
-{% assign entries_layout = page.entries_layout | default: 'list' %}
-<div class="entries-{{ entries_layout }}">
-  {% for post in posts %}
-    {% include archive-single.html type=entries_layout %}
-  {% endfor %}
+<div class="initial-content" style="height: auto !important;">
+  <div class="page__hero--overlay" style="background-color: #5e616c; background-image: url('/minimal-mistakes/assets/images/mm-home-page-feature.jpg');">
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">Minimal Mistakes</h1>
+      <p class="page__lead">
+        A flexible two-column Jekyll theme. Perfect for building personal sites, blogs, andportfolios.<br>
+        <small>
+          <a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/4.24.0">Latestrelease v4.24.0</a>
+        </small>
+      </p>
+      <p>
+        <a href="/minimal-mistakes/docs/quick-start-guide/" class="btn btn--light-outline btn--large">
+          <i class="fas fa-download"></i> Install now
+        </a>
+      </p>
+    </div>
+  </div>
+  <div id="main" role="main">
+    <article class="splash" itemscope="" itemtype="https://schema.org/CreativeWork">
+      <meta itemprop="description" content="A flexible two-column Jekyll theme. Perfect for building personal sites, blogs, and portfolios. Latest release v4.24.0">
+      <section class="page__content" itemprop="text">
+        <div class="feature__wrapper">
+          <div class="feature__item">
+            <div class="archive__item">
+              <div class="archive__item-teaser">
+                <img src="/minimal-mistakes/assets/images/mm-customizable-feature.png" alt="customizable">
+              </div>
+              <div class="archive__item-body">
+                <h2 class="archive__item-title">Super customizable</h2>
+                <div class="archive__item-excerpt">
+                  <p>Everything from the menus, sidebars, comments, and more can be configured or set with YAML Front Matter.</p>
+                </div>
+                <p><a href="/minimal-mistakes/docs/configuration/" class="btn btn--primary">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="feature__item">
+            <div class="archive__item">
+              <div class="archive__item-teaser">
+                <img src="/minimal-mistakes/assets/images/mm-responsive-feature.png" alt="fully responsive">
+              </div>
+              <div class="archive__item-body">
+                <h2 class="archive__item-title">Responsive layouts</h2>
+                <div class="archive__item-excerpt">
+                  <p>Built with HTML5 + CSS3. All layouts are fully responsive with helpers to augment your content.</p>
+                </div>
+                <p><a href="/minimal-mistakes/docs/layouts/" class="btn btn--primary">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="feature__item">
+            <div class="archive__item">
+              <div class="archive__item-teaser">
+                <img src="/minimal-mistakes/assets/images/mm-free-feature.png" alt="100% free">
+              </div>
+              <div class="archive__item-body">
+                <h2 class="archive__item-title">100% free</h2>
+                <div class="archive__item-excerpt">
+                  <p>Free to use however you want under the MIT License. Clone it, fork it, customize it… whatever!</p>
+                </div>
+                <p><a href="/minimal-mistakes/docs/license/" class="btn btn--primary">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+  </div>
 </div>
-
-{% include paginator.html %}
