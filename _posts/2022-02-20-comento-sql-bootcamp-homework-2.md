@@ -5,6 +5,7 @@ toc: true
 toc_icon: bars
 toc_sticky: true
 comments: true
+author_profile: false
 tags: [comento-bootcamp, sql]
 ---
 
