@@ -6,8 +6,8 @@ main:
     url: /recent/
   - title: "Tags"
     url: /tags/
-  - title: "Archive"
-    url: /archive/
+  - title: "Archives"
+    url: /archives/
 
 # documentation links
 docs:
