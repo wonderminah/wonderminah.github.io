@@ -58,7 +58,7 @@ _layout/posts.html의 가장 하단에 아래 코드를 추가.
 
 # 결과
 
-![image-20220207081230876](https://wonderminah.github.io/assets/img/image-20220207081230876.png)
+![image-20220207081230876](../assets/img/image-20220207081230876.png)
 
 끝~  
 Be the first to comment! 이렇게 성의없이 포스팅하는 블로그에도 누군가 관심을 가져줄까요.

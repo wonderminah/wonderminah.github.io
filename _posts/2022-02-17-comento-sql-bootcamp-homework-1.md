@@ -21,7 +21,7 @@ WHERE ContactName LIKE 'A%' -- ContactName이 'A'로 시작하는
 GROUP BY Country -- Contry 별로
 ```
 
-![image-20220217020112226](https://wonderminah.github.io/assets/img/image-20220217020112226.png)
+![image-20220217020112226](../assets/img/image-20220217020112226.png)
 
 ## 예시 답안
 
@@ -34,7 +34,7 @@ WHERE ContactName LIKE 'A%'
 GROUP BY Country;
 ```
 
-![image-20220217021517909](https://wonderminah.github.io/assets/img/image-20220217021517909.png)
+![image-20220217021517909](../assets/img/image-20220217021517909.png)
 
 ## 차이점
 
@@ -65,7 +65,7 @@ LEFT JOIN Orders O ON OD.OrderID = O.OrderID
 GROUP BY O.CustomerID -- Customer 별로
 ```
 
-![image-20220217020820947](https://wonderminah.github.io/assets/img/image-20220217020820947.png)
+![image-20220217020820947](../assets/img/image-20220217020820947.png)
 
 ## 예시 답안
 
@@ -78,7 +78,7 @@ LEFT JOIN OrderDetails b on a.OrderId = b.OrderId
 GROUP BY a.CustomerID;
 ```
 
-![image-20220217021635943](https://wonderminah.github.io/assets/img/image-20220217021635943.png)
+![image-20220217021635943](../assets/img/image-20220217021635943.png)
 
 ## 차이점
 
@@ -109,7 +109,7 @@ GROUP BY YearMonth, EmployeeID
 ORDER BY YearMonth ASC, EmployeeID ASC
 ```
 
-![image-20220217021935851](https://wonderminah.github.io/assets/img/image-20220217021935851.png)
+![image-20220217021935851](../assets/img/image-20220217021935851.png)
 
 ## 예시 답안
 
@@ -122,7 +122,7 @@ FROM Orders a
 LEFT JOIN OrderDetails b ON a.OrderID = b.OrderID
 ```
 
-![image-20220217022116907](https://wonderminah.github.io/assets/img/image-20220217022116907.png)
+![image-20220217022116907](../assets/img/image-20220217022116907.png)
 
 ## 차이점
 

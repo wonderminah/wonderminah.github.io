@@ -19,7 +19,7 @@ FROM products
 GROUP BY category -- 상품(product)의 카테고리(category)별로
 ```
 
-![image-20220221002755980](/Users/minah.kim/Library/Application Support/typora-user-images/image-20220221002755980.png)
+![image-20220221002755980](../assets/img/image-20220221002755980.png)
 
 ## 예시 답안
 
@@ -32,7 +32,7 @@ from products
 group by category;
 ```
 
-![image-20220221002814489](/Users/minah.kim/Library/Application Support/typora-user-images/image-20220221002814489.png)
+![image-20220221002814489](../assets/img/image-20220221002814489.png)
 
 ## 차이점
 
@@ -61,7 +61,7 @@ left join products p on p.id = od.product_id
 group by c.id -- 고객(customer)별
 ```
 
-![image-20220221002832377](/Users/minah.kim/Library/Application Support/typora-user-images/image-20220221002832377.png)
+![image-20220221002832377](../assets/img/image-20220221002832377.png)
 
 ## 예시 답안
 
@@ -78,7 +78,7 @@ where '2006-01-01' <= o.order_date and o.order_date < '2006-04-01'
 group by o.customer_id;
 ```
 
-![image-20220221002842553](/Users/minah.kim/Library/Application Support/typora-user-images/image-20220221002842553.png)
+![image-20220221002842553](../assets/img/image-20220221002842553.png)
 
 ## 차이점
 
@@ -116,7 +116,7 @@ left join orders_status os on os.id = o.status_id
 where date_format(o.order_date, '%Y%m') = '200603' -- 2006년 3월에 주문(order)된 건의
 ```
 
-![image-20220221002854602](/Users/minah.kim/Library/Application Support/typora-user-images/image-20220221002854602.png)
+![image-20220221002854602](../assets/img/image-20220221002854602.png)
 
 ## 예시 답안
 
@@ -139,7 +139,7 @@ left join orders_status os on o.status_id = os.id
 where '2006-03-01' <= o.order_date and o.order_date < '2006-04-01';
 ```
 
-![image-20220221002907731](/Users/minah.kim/Library/Application Support/typora-user-images/image-20220221002907731.png)
+![image-20220221002907731](../assets/img/image-20220221002907731.png)
 
 ## 차이점
 
@@ -166,7 +166,7 @@ group by p.id
 having count(od.id) >= 3 -- 세 번 이상 주문(order) 된
 ```
 
-![image-20220221002933728](/Users/minah.kim/Library/Application Support/typora-user-images/image-20220221002933728.png)
+![image-20220221002933728](../assets/img/image-20220221002933728.png)
 
 ## 예시 답안
 
@@ -193,7 +193,7 @@ from (
 where cnt >= 3
 ```
 
-![image-20220221002929047](/Users/minah.kim/Library/Application Support/typora-user-images/image-20220221002929047.png)
+![image-20220221002929047](../assets/img/image-20220221002929047.png)
 
 ## 차이점
 
@@ -221,7 +221,7 @@ inner join (select distinct employee_id
 on f.employee_id = s.employee_id
 ```
 
-![image-20220221002942139](/Users/minah.kim/Library/Application Support/typora-user-images/image-20220221002942139.png)
+![image-20220221002942139](../assets/img/image-20220221002942139.png)
 
 ## 예시 답안
 
@@ -236,7 +236,7 @@ inner join (select distinct employee_id
 on o1.employee_id = o2.employee_id;
 ```
 
-![image-20220221002952885](/Users/minah.kim/Library/Application Support/typora-user-images/image-20220221002952885.png)
+![image-20220221002952885](../assets/img/image-20220221002952885.png)
 
 ## 차이점
 
@@ -270,7 +270,7 @@ where
 group by employee_id, date_format(order_date, '%Y-%m')
 ```
 
-![image-20220221003003296](/Users/minah.kim/Library/Application Support/typora-user-images/image-20220221003003296.png)
+![image-20220221003003296](../assets/img/image-20220221003003296.png)
 
 ## 예시 답안
 
@@ -292,7 +292,7 @@ on o1.employee_id = o2.employee_id)
 group by 1, 2;
 ```
 
-![image-20220221003013717](/Users/minah.kim/Library/Application Support/typora-user-images/image-20220221003013717.png)
+![image-20220221003013717](../assets/img/image-20220221003013717.png)
 
 ## 차이점
 

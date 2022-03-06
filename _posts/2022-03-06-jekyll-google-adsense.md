@@ -10,7 +10,7 @@ tags: [jekyll, google-adsense]
 
 # 애드센스에 사이트 연결
 
-![image-20220306025323889](/Users/minah.kim/Library/Application Support/typora-user-images/image-20220306025323889.png)
+![image-20220306025323889](../assets/img/image-20220306025323889.png)
 
 레이아웃에 그대로 추가하게 되면 나중에 관리가 안 될것 같아 이전의 Google Analytics처럼,   
 별도의 html 파일을 만들고 호출하는 방식을 사용하기로 하였다.
