@@ -31,7 +31,8 @@ wonderminah.github.io
 
 ```html
 <!-- default.html -->
-    {% include advertisement-providers/google-adsense.html %}
+<!-- include가 실행되어 블로그 화면에 google-adsense.html 내용이 표시되는 바람에 일부러 주석처리 하였습니다 -->
+    <!--{% include advertisement-providers/google-adsense.html %}-->
   </body>
 </html>
 ```
