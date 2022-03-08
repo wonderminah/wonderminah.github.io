@@ -28,13 +28,8 @@ ChromeDriver 96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-
 
 # 새 버전의 chromedriver 설치
 
-[chromedriver.chromium.org/downloads](https://chromedriver.chromium.org/downloads)에 접속하여,   
-크롬 브라우저 버전과 같은 99.0.4844.51의 .zip파일을 다운로드 및 unzip 한다.
-
-```bash
-{22-03-09 0:03}P79305:/usr/local/bin minah.kim% ll chrom*
-lrwxr-xr-x  1 minah.kim  admin    58B Nov 29 23:17 chromedriver -> /usr/local/Caskroom/chromedriver/96.0.4664.45/chromedriver
-```
+아래 주소에 접속하여, 99.0.4844.51의 .zip파일을 다운로드 및 unzip 한다.
+[chromedriver.chromium.org/downloads](https://chromedriver.chromium.org/downloads)
 
 chromedriver의 바이너리 파일은 아래와 같은 경로를 참조하고 있다.
 
