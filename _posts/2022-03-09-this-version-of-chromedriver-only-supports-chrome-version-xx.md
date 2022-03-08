@@ -15,7 +15,7 @@ selenium.common.exceptions.SessionNotCreatedException: Message: session not crea
 Current browser version is 99.0.4844.51 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
 ```
 
-# 설치된 chromedriver 버전 확인
+# 기존 chromedriver 버전 확인
 
 ```bash
 {22-03-08 23:23}P79305:~ minah.kim% which chromedriver
@@ -25,6 +25,9 @@ ChromeDriver 96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-
 ```
 
 현재 버전은 96. chrome 버전에 맞게 업데이트를 해줘야 한다.
+
+# 새 버전의 chromedriver 설치
+
 [chromedriver.chromium.org/downloads](https://chromedriver.chromium.org/downloads)에 접속하여,   
 크롬 브라우저 버전과 같은 99.0.4844.51의 .zip파일을 다운로드 및 unzip 한다.
 
