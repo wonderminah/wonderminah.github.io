@@ -1,5 +1,5 @@
 ---
-title: "코멘토 SQL 입문부터 활용까지 - 데이터 분석 보고서 작성과 대시보드 개발 - 2주차 과제"
+title: "From SQL beginning to utilization - 2nd week homework"
 date: 2022-02-20 23:48:00 +0900
 tags: [comento-bootcamp, sql]
 ---
