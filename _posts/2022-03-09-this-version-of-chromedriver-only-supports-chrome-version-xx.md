@@ -1,5 +1,5 @@
 ---
-title: This version of ChromeDriver only supports Chrome version XX 문제
+title: This version of ChromeDriver only supports Chrome version XX Issue
 date: 2022-03-09 00:19:00 +0900
 tags: [chromedriver]
 ---

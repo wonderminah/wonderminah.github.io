@@ -1,7 +1,7 @@
 ---
-title: "파이썬과 파파고를 이용한 영어문장 자동재생 스크립트"
+title: "Implement autoplay script with using Python 3 and Papago"
 date: 2022-02-07 01:37:00 +0900
-tags: [python]
+tags: [python3]
 ---
 
 # 문제의 발단

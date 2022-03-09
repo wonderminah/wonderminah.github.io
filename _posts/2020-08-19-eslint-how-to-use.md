@@ -1,5 +1,5 @@
 ---
-title: "ESLint의 개념 및 사용 예시"
+title: "What is ESLint and how to use"
 date: 2020-08-19 23:09:00 +0900
 tags: [javascript]
 ---

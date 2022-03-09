@@ -1,5 +1,5 @@
 ---
-title: "jekyll 블로그 초기구축 로그"
+title: "Initial setup to start jekyll blog"
 date: 2020-08-21 01:12:00 +0900
 tags: [jekyll]
 ---
