@@ -32,4 +32,4 @@ git diff origin/master...origin/feature/itnavi_phase3_ver2 --name-only | wc -l
 # 참고
 
 * [https://matthew-brett.github.io/pydagogue/git_diff_dots.html](https://matthew-brett.github.io/pydagogue/git_diff_dots.html)
-* https://yakst.com/ja/posts/4116
+* [https://yakst.com/ja/posts/4116](https://yakst.com/ja/posts/4116)
