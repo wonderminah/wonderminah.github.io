@@ -58,7 +58,7 @@ layout: default
                     {% for tag in site.tags %}
                       {% if tag[1].size == i %}
                         <li>
-                          <a href="#{{ tag[0] | slugify }}">
+                          <a href="/recent/#{{ tag[0] | slugify }}">
                             <strong>{{ tag[0] }}</strong> <span class="taxonomy__count">{{ i }}</span>
                           </a>
                         </li>
@@ -79,12 +79,12 @@ layout: default
                 <img src="/minimal-mistakes/assets/images/mm-free-feature.png" alt="100% free">
               </div> -->
               <div class="archive__item-body">
-                <h2 class="archive__item-title">Archive</h2>
+                <h2 class="archive__item-title">Archives</h2>
                 <ul class="taxonomy__index" style="grid-template-columns: none; display: block;">
                   {% assign postsInYearAndMonth = site.posts | where_exp: "item", "item.hidden != true" | group_by_exp: 'post', 'post.date | date: "%Y/%m"' %}
                   {% for yearAndMonth in postsInYearAndMonth %}
                     <li>
-                      <a href="#{{ yearAndMonth.name }}">
+                      <a href="/archives/#{{ yearAndMonth.name }}">
                         <strong>{{ yearAndMonth.name }}</strong> <span class="taxonomy__count">{{ yearAndMonth.items | size }}</span>
                       </a>
                     </li>
