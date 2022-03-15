@@ -1,7 +1,7 @@
 ---
 title: Setup environment for jupyter notebook
 date: 2022-03-16 00:28:00 +0900
-tags: [jupyter-notebook, anaconda]
+tags: [jupyter-notebook]
 ---
 
 # Precondition
