@@ -56,7 +56,7 @@ $ python -m notebook
 ...
 ```
 
-![image-20220316000016024](/Users/minah.kim/Library/Application Support/typora-user-images/image-20220316000016024.png)
+![image-20220316000016024](../assets/img/image-20220316000016024.png)
 
 # Nbextensions
 
@@ -71,4 +71,4 @@ $ python -m notebook                         # jupyter notebook을 재시작
 
 아래와 같이, Nbextensions 탭이 새롭게 표시된다면 문제없이 설치된 것이다.
 
-![image-20220316002552138](/Users/minah.kim/Library/Application Support/typora-user-images/image-20220316002552138.png)
+![image-20220316002552138](../assets/img/image-20220316002552138.png)
