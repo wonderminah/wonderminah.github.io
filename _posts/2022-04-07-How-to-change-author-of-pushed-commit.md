@@ -22,13 +22,29 @@ Date:   Wed Mar 16 00:56:31 2022 +0900
     Initial Commit
 ```
 
-# 개인 프로젝트에 git config --local로 유저 재설정
+# 개인 프로젝트 유저 재설정
 
-해당 프로젝트에만 적용되도록 --local 옵션을 기재한다.
+개인 프로젝트의 config를 확인해보니, 이름과 이메일이 회사 것으로 설정되어 있다. 
 
 ```bash
-git config --local user.name "wonderminah"
-git config --local user.email "minah.kim@rakuten.com"
+$ git config --list --local
+user.email=minah.kim@rakuten.com
+user.name=Kim, Minah | Minah | MSD
+```
+
+바꾸도록 하자. 해당 프로젝트에만 적용되도록 --local 옵션을 기재한다.
+
+```bash
+$ git config --local user.name "wonderminah"
+$ git config --local user.email "minah.kim@rakuten.com"
+```
+
+다시 확인해보면 잘 바뀌어 있는 것을 확인할 수 있다.
+
+```bash
+$ git config --list --local
+user.email=kimma1205@gmail.com
+user.name=wonderminah
 ```
 
 # 변경할 커밋 지정
