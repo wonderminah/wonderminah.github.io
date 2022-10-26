@@ -15,7 +15,7 @@ commit a7b5e2e982e63c37584418c9564cd618c2a7362d
 Author: Kim, Minah
 Date:   Sun Feb 13 23:04:04 2022 +0900
 
-    キーワードの検索結果数の表示を削除
+    Minor fix
 
 commit ca7368bac9c2214f95b5e0398de22409784df6d3
 Author: Kim, Minah
@@ -28,7 +28,7 @@ Merge: df733147 2378277c
 Author: Kim, Minah
 Date:   Sun Feb 13 22:47:04 2022 +0900
 
-    Merge branch 'feature/itnavi_phase3_ver2' into private/itnavi_phase3_ver2/dev_minah
+    Merge branch 'feature' into develop
 ```
 
 ca7368ba 커밋을 고치고 싶다고 가정하자.
@@ -84,7 +84,7 @@ git commit --amend --no-edit --date="FEB 10 19:21:23 2022 +0000"
 
 ```bash
 commit 5666fe9643b2a77f787a5eae762aec29967787cd (HEAD)
-Author: Kim, Minah | Minah | MSD <minah.kim@rakuten.com>
+Author: Kim, Minah
 Date:   Thu Feb 10 19:21:23 2022 +0000
 
     Add validation
