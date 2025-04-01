@@ -2,7 +2,7 @@
 title: "GitHub Actions 에러 The job was not started because recent account payments have failed or your spending limit needs to be increased 해결 방법"
 date: 2025-04-01 18:49:00 +0900
 tags: [git, github, github-action]
-​---
+---
 
 # 문제 개요
 
@@ -35,17 +35,13 @@ The job was not started because recent account payments have failed or your spen
 - self-hosted runners 의 경우 Usage 가 free 
 
 릴리즈 중 문제가 일어난 곳은 standard GitHub-hosted runners 의 private repo였다.
-
 public repo 로 전환하지 않는 한, Usage 제약을 피하려면 self-hosted runners 를 고려해야 한다.
-
 인프라 팀에 의하면 self-hosted runners 로써 AWS CodeDeploy 를 이용 가능하다고 하는데,
-
 이제껏 처음 발생한 문제이고 어쩌다 월말에 발생한 문제로 보여, 일단은 두고보기로 했다.
-
 업무에 지장이 생길 정도로 자주 발생한다면 AWS CodeDeploy를 검토하는 것으로.
 
 # 향후 대응 방안
 
 1. 임시방편으로, 다른 GitHub Account 로 로그인하여 다시 시도하고 에러없이 실행이 완료되는지 본다.
-2. 1. 의 해결 방법이 어렵다면, GitHub 관리팀에 연락하여 Spending Limit 을 일시적으로 늘려주도록 의뢰한다.
+2. 1.의 해결 방법이 어렵다면, GitHub 관리팀에 연락하여 Spending Limit 을 일시적으로 늘려주도록 의뢰한다.
 3. 문제가 자주 발생한다면, self-hosted runners 를 검토한다.
