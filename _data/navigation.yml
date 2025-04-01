@@ -11,57 +11,80 @@ main:
 
 # documentation links
 docs:
-  - title: Getting Started
+  - title: Blog
     children:
-      - title: "Quick-Start Guide"
-        url: /docs/quick-start-guide/
-      - title: "Structure"
-        url: /docs/structure/
-      - title: "Installation"
-        url: /docs/installation/
-      - title: "Upgrading"
-        url: /docs/upgrading/
-  - title: Customization
+      - title: "Github Blog"
+        url: /docs/github-blog/
+  - title: Web
     children:
-      - title: "Configuration"
-        url: /docs/configuration/
-      - title: "Overriding Theme Defaults"
-        url: /docs/overriding-theme-defaults/
-      - title: "Navigation"
-        url: /docs/navigation/
-      - title: "UI Text"
-        url: /docs/ui-text/
-      - title: "Authors"
-        url: /docs/authors/
-      - title: "Layouts"
-        url: /docs/layouts/
-  - title: Content
+      - title: "Google Search Console"
+        url: /docs/google-search-console/
+      - title: "Google Analytics"
+        url: /docs/google-analytics/
+      - title: "SEO"
+        url: /docs/seo/
+  - title: Markup/Stylesheet
     children:
-      - title: "Working with Posts"
-        url: /docs/posts/
-      - title: "Working with Pages"
-        url: /docs/pages/
-      - title: "Working with Collections"
-        url: /docs/collections/
-      - title: "Helpers"
-        url: /docs/helpers/
-      - title: "Utility Classes"
-        url: /docs/utility-classes/
-  - title: Extras
+      - title: "HTML"
+        url: /docs/html/
+      - title: "CSS"
+        url: /docs/css/
+  - title: Programming Language
     children:
-      - title: "Stylesheets"
+      - title: "Javascript"
         url: /docs/stylesheets/
-      - title: "JavaScript"
+      - title: "Java"
         url: /docs/javascript/
-  - title: Meta
+      - title: "PHP"
+        url: /docs/javascript/
+      - title: "Python"
+        url: /docs/javascript/
+  - title: DevOps/Infra
     children:
-      - title: "History"
-        url: /docs/history/
-      - title: "Contributing"
-        url: /docs/contributing/
-      - title: "Old 2.2 Docs"
-        url: /docs/docs-2-2/
-      - title: "License"
-        url: /docs/license/
-      - title: "Terms &amp; Privacy Policy"
-        url: /terms/
+      - title: "Git"
+        url: /docs/git/
+      - title: "Jenkins"
+        url: /docs/jenkins/
+      - title: "Docker"
+        url: /docs/docker/
+      - title: "Ansible"
+        url: /docs/ansible/
+      - title: "Grafana"
+        url: /docs/grafana
+  - title: IDE/Tools
+      - title: "IDE"
+        url: /docs/ide/
+      - title: "Tools"
+        url: /docs/tools/
+  - title: Data/AI
+    children:
+      - title: "Elasticsearch"
+        url: /docs/elasticsearch/
+      - title: "MySQL"
+        url: /docs/mysql/
+      - title: "Oracle"
+        url: /docs/oracle/
+      - title: "SQL"
+        url: /docs/sql/
+      - title: "AI"
+        url: /docs/ai/
+  - title: Cloud
+    children:
+      - title: "AWS"
+        url: /docs/aws/
+      - title: "Salesforce"
+        url: /docs/salesforce/
+  - title: Computer Science
+    children:
+      - title: "Database"
+        url: /docs/database/
+      - title: "Algorithm"
+        url: /docs/algorithm/
+      - title: "Operating System"
+        url: /docs/operating-system/
+      - title: "Data Structure"
+        url: /docs/data-structure/
+      - title: "Network"
+        url: /docs/network/
+      - title: "Security"
+        url: /docs/security/
