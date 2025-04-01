@@ -52,6 +52,7 @@ docs:
       - title: "Grafana"
         url: /docs/grafana
   - title: IDE/Tools
+    children:
       - title: "IDE"
         url: /docs/ide/
       - title: "Tools"
