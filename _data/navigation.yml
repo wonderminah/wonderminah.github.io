@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "About"
-    url: Minah_Kim-CV.pdf
+    url: /about/
   - title: "Recent"
     url: /recent/
   - title: "Tags"

@@ -1,5 +1,5 @@
 ---
 title: About
-permalink: Minah_Kim-CV.pdf
+permalink: /about/
 layout: about
 ---
