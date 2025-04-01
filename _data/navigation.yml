@@ -15,6 +15,10 @@ docs:
     children:
       - title: "Github Blog"
         url: /docs/github-blog/
+  - title: PjM/Teamwork
+    children:
+      - title: "Collaboration Software"
+        url: /docs/collaboration-software/
   - title: Web
     children:
       - title: "Google Search Console"
@@ -32,13 +36,15 @@ docs:
   - title: Programming Language
     children:
       - title: "Javascript"
-        url: /docs/stylesheets/
+        url: /docs/javascript/
       - title: "Java"
-        url: /docs/javascript/
+        url: /docs/java/
       - title: "PHP"
-        url: /docs/javascript/
+        url: /docs/php/
       - title: "Python"
-        url: /docs/javascript/
+        url: /docs/python/
+      - title: "Shell"
+        url: /docs/shell/
   - title: DevOps/Infra
     children:
       - title: "Git"
@@ -53,12 +59,16 @@ docs:
         url: /docs/grafana
   - title: IDE/Tools
     children:
-      - title: "IDE"
-        url: /docs/ide/
-      - title: "Tools"
-        url: /docs/tools/
-  - title: Data/AI
+      - title: "Visual Studio Code"
+        url: /docs/visual-studio-code/
+      - title: "Postman"
+        url: /docs/postman/
+      - title: "Selenium"
+        url: /docs/selenium/
+  - title: AI/Data
     children:
+      - title: "AI"
+        url: /docs/ai/
       - title: "Elasticsearch"
         url: /docs/elasticsearch/
       - title: "MySQL"
@@ -67,8 +77,6 @@ docs:
         url: /docs/oracle/
       - title: "SQL"
         url: /docs/sql/
-      - title: "AI"
-        url: /docs/ai/
   - title: Cloud
     children:
       - title: "AWS"
