@@ -1,5 +1,5 @@
 ---
-title: "Git 에러 [Support for password authentication was removed on August 13, 2021.] 해결 방법"
+title: "Git 에러 'Support for password authentication was removed on August 13, 2021.' 해결 방법"
 date: 2025-04-01 21:45:00 +0900
 tags: [git, github]
 ---
