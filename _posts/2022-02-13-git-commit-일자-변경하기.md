@@ -1,5 +1,5 @@
 ---
-title: "How to change git commit datetime"
+title: “git commit 일자 변경하기"
 date: 2022-02-17 01:17:00 +0900
 tags: [git]
 ---

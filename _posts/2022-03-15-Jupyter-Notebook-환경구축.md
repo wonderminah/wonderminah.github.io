@@ -1,5 +1,5 @@
 ---
-title: Setup environment for jupyter notebook
+title: “Jupyter Notebook 환경구축"
 date: 2022-03-16 00:28:00 +0900
 tags: [jupyter-notebook]
 ---

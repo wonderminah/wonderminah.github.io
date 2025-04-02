@@ -1,5 +1,5 @@
 ---
-title: "GitHub 블로그를 Google Search Console에 등록하는 방법"
+title: “Jekyll 블로그를 Google Search Console에 등록하는 방법"
 date: 2025-04-02 23:00:00 +0900
 tags: [jekyll, google-search-console]
 ---
@@ -8,25 +8,25 @@ tags: [jekyll, google-search-console]
 
 URL prefix 에 `https://wonderminah.github.io/` 를 입력하고 CONTINUE를 클릭한다.
 
-![image-20250402223835540](../assets/img/image-20250402223835540.png)
+![image-20250402223835540](/Users/minah.kim/Library/Application Support/typora-user-images/image-20250402223835540.png)
 
 이미 예전에 HTML 파일 등록을 완료해 두었기 때문에 auto verified 라고 뜬다. HTML 파일 등록은 바로 밑에 후술한다.
 
-![image-20250402223842255](../assets/img/image-20250402223842255.png)
+![image-20250402223842255](/Users/minah.kim/Library/Application Support/typora-user-images/image-20250402223842255.png)
 
 # 2. HTML 파일 등록
 
 좌측 네비게이션에서, 등록된 `https://wonderminah.github.io/` 를 클릭한다.
 
-![image-20250402223857867](../assets/img/image-20250402223857867.png)
+![image-20250402223857867](/Users/minah.kim/Library/Application Support/typora-user-images/image-20250402223857867.png)
 
 Ownership verification을 클릭한다. (이미 인증이 완료된 상태라 초록색 마크가 표시되지만, 미인증 상태에서는 다르다.)
 
-![image-20250402224223593](../assets/img/image-20250402224223593.png)
+![image-20250402224223593](/Users/minah.kim/Library/Application Support/typora-user-images/image-20250402224223593.png)
 
 클릭하면 HTML 파일을 다운로드 하는 화면이 표시된다. HTML 파일을 아래와 같이 프로젝트 루트에 두고 push한다.
 
-![image-20250402224334349](../assets/img/image-20250402224334349.png)
+![image-20250402224334349](/Users/minah.kim/Library/Application Support/typora-user-images/image-20250402224334349.png)
 
 참고로 HTML 내용은 아래와 같다.
 
@@ -53,15 +53,15 @@ https://wonderminah.github.io/sitemap.xml 에 접속하면 sitemap.xml 이 자�
 
 하지만 Google Search Console 에서 sitemap.xml 의 Status 를 확인해 보니, Couldn't fetch 상태였다.
 
-![image-20250402225440896](../assets/img/image-20250402225440896.png)
+![image-20250402225440896](/Users/minah.kim/Library/Application Support/typora-user-images/image-20250402225440896.png)
 
 sitemap.xml 을 입력하고 다시 한 번 SUBMIT 해주었다.
 
-![image-20250402225536957](../assets/img/image-20250402225536957.png)
+![image-20250402225536957](/Users/minah.kim/Library/Application Support/typora-user-images/image-20250402225536957.png)
 
 sitemap.xml 의 Submitted 가 Apr 2, 2025 로 갱신되었다. Status 는 조금 더 기다려보자.
 
-![image-20250402225555425](../assets/img/image-20250402225555425.png)
+![image-20250402225555425](/Users/minah.kim/Library/Application Support/typora-user-images/image-20250402225555425.png)
 
 # 4. robots.txt 생성
 

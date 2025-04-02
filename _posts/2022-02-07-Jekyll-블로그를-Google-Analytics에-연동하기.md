@@ -1,5 +1,5 @@
 ---
-title: "Add Google Analytics in jekyll blog"
+title: “Jekyll 블로그를 Google Analytics에 연동하기"
 date: 2022-02-07 08:49:00 +0900
 tags: [jekyll, google-analytics]
 ---

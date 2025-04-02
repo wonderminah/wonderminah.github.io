@@ -1,5 +1,5 @@
 ---
-title: Add Google AdSense in jekyll blog
+title: “Jekyll 블로그에 Google Adsense 추가하기"
 date: 2022-03-06 02:52:00 +0900
 tags: [jekyll, google-adsense]
 ---

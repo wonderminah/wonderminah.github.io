@@ -1,5 +1,5 @@
 ---
-title: "How to change author of pushed commit"
+title: “push된 git commit의 작성자를 변경하기"
 date: 2022-04-07 22:22:34 +0900
 tags: [git]
 ---

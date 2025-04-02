@@ -1,5 +1,5 @@
 ---
-title: "Implement comment feature in jekyll blog with using disqus"
+title: “Jekyll 블로그에 Disqus를 이용하여 댓글기능 추가하기"
 date: 2022-02-07 08:00:00 +0900
 tags: [jekyll]
 ---
