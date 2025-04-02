@@ -1,7 +1,7 @@
 ---
 title: This version of chromedriver only supports chrome version xx 에러 해결방법
 date: 2022-03-09 00:19:00 +0900
-tags: [chromedriver]
+tags: [chromedriver, selenium]
 ---
 
 # 에러 내용
