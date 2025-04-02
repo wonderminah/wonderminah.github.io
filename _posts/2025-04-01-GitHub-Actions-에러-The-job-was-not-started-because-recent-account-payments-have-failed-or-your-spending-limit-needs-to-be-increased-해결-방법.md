@@ -1,7 +1,7 @@
 ---
-title: "GitHub Actions 에러 The job was not started because recent account payments have failed or your spending limit needs to be increased 해결 방법"
+title: GitHub Actions 에러 The job was not started because recent account payments have failed or your spending limit needs to be increased 해결 방법
 date: 2025-04-01 18:49:00 +0900
-tags: [git, github, github-action]
+tags: [github, github-action]
 ---
 
 # 문제 개요

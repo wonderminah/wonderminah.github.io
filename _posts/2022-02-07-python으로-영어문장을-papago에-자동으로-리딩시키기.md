@@ -1,7 +1,7 @@
 ---
-title: “python으로 영어문장을 papago에 자동으로 리딩시키기"
+title: python으로 영어문장을 papago에 자동으로 리딩시키기
 date: 2022-02-07 01:37:00 +0900
-tags: [python3]
+tags: [python, selenium]
 ---
 
 # 문제의 발단
