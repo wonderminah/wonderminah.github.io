@@ -13,87 +13,87 @@ main:
 docs:
   - title: Blog
     children:
-      - title: "Github Blog"
-        url: /docs/github-blog/
+      - title: "Jekyll Blog"
+        url: /blog/jekyll/
   - title: PjM/Teamwork
     children:
       - title: "Collaboration Software"
-        url: /docs/collaboration-software/
+        url: /pjm/collaboration-software/
   - title: Web
     children:
       - title: "Google Search Console"
-        url: /docs/google-search-console/
+        url: /web/google-search-console/
       - title: "Google Analytics"
-        url: /docs/google-analytics/
+        url: /web/google-analytics/
       - title: "SEO"
-        url: /docs/seo/
-  - title: Markup/Stylesheet
+        url: /web/seo/
+  - title: Frontend
     children:
       - title: "HTML"
-        url: /docs/html/
+        url: /frontend/html/
       - title: "CSS"
-        url: /docs/css/
-  - title: Programming Language
-    children:
+        url: /frontend/css/
       - title: "Javascript"
-        url: /docs/javascript/
+        url: /frontend/javascript/
+  - title: Backend
+    children:
       - title: "Java"
-        url: /docs/java/
+        url: /backend/java/
       - title: "PHP"
-        url: /docs/php/
+        url: /backend/php/
       - title: "Python"
-        url: /docs/python/
+        url: /backend/python/
       - title: "Shell"
-        url: /docs/shell/
+        url: /backend/shell/
   - title: DevOps/Infra
     children:
       - title: "Git"
-        url: /docs/git/
+        url: /devops/git/
       - title: "Jenkins"
-        url: /docs/jenkins/
+        url: /devops/jenkins/
       - title: "Docker"
-        url: /docs/docker/
+        url: /devops/docker/
       - title: "Ansible"
-        url: /docs/ansible/
+        url: /devops/ansible/
       - title: "Grafana"
-        url: /docs/grafana
+        url: /devops/grafana
   - title: IDE/Tools
     children:
       - title: "Visual Studio Code"
-        url: /docs/visual-studio-code/
+        url: /tools/vs-code/
       - title: "Postman"
-        url: /docs/postman/
+        url: /tools/postman/
       - title: "Selenium"
-        url: /docs/selenium/
-  - title: AI/Data
+        url: /tools/selenium/
+  - title: Data
     children:
       - title: "AI"
-        url: /docs/ai/
+        url: /data/ai/
       - title: "Elasticsearch"
-        url: /docs/elasticsearch/
+        url: /data/elasticsearch/
       - title: "MySQL"
-        url: /docs/mysql/
+        url: /data/mysql/
       - title: "Oracle"
-        url: /docs/oracle/
+        url: /data/oracle/
       - title: "SQL"
-        url: /docs/sql/
+        url: /data/sql/
   - title: Cloud
     children:
       - title: "AWS"
-        url: /docs/aws/
+        url: /cloud/aws/
       - title: "Salesforce"
-        url: /docs/salesforce/
+        url: /cloud/salesforce/
   - title: Computer Science
     children:
       - title: "Database"
-        url: /docs/database/
+        url: /cs/database/
       - title: "Algorithm"
-        url: /docs/algorithm/
+        url: /cs/algorithm/
       - title: "Operating System"
-        url: /docs/operating-system/
+        url: /cs/operating-system/
       - title: "Data Structure"
-        url: /docs/data-structure/
+        url: /cs/data-structure/
       - title: "Network"
-        url: /docs/network/
+        url: /cs/network/
       - title: "Security"
-        url: /docs/security/
+        url: /cs/security/
