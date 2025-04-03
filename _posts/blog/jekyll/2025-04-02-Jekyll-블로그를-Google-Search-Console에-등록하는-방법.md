@@ -77,3 +77,9 @@ Sitemap: https://wonderminah.github.io/sitemap.xml
 `User-agent: *` 모든 User-agent 를 허용
 `Allow: /` 웹 사이트 내의 모든 path에 대한 크롤링을 허용
 `Sitemap:` sitemap.xml 의 URL를 기재
+
+# 5. 구글 검색결과 확인
+
+하루~이틀 후 확인해보니, 다음과 같이 검색결과에 나타나게 된 걸 확인할 수 있었다.
+
+![image-20250404012402563](../assets/img/image-20250404012402563.png)
