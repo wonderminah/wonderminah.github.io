@@ -63,5 +63,4 @@ minimal-mistakes 테마에는 `_layouts/archive-taxonomy.html` 템플릿이 이�
 
 완료.
 
-![image-20250405021711934](/assets/img/image-20250405021711934.png)
-
+![image-20250405021711934](/assets/img/image-20250405024739765.png)
