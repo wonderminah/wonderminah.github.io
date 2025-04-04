@@ -9,7 +9,7 @@ categories: [git]
 
 # 기존의 상태
 
-![image-20250404005725107](../assets/img/image-20250404005725107.png)
+![image-20250404005725107](/assets/img/image-20250404005725107.png)
 
 최신 commit 의 ID는 `1247a00`이다. 이것을 새로운 커밋으로 덮어쓸 것이다.
 
@@ -32,7 +32,7 @@ git commit -m "포스트 업로드 - Jekyll 블로그에서 Categories를 이용
 git push -f
 ```
 
-![image-20250404005923863](../assets/img/image-20250404005923863.png)
+![image-20250404005923863](/assets/img/image-20250404005923863.png)
 
 이전 ID `1247a00` 은 사라지고, 최신 commit 의 ID는 `432206b` 로 확인되는 걸 볼 수 있다.
 

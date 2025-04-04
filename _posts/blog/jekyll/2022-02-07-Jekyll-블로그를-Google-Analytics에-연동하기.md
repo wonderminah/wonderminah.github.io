@@ -10,7 +10,7 @@ categories: [jekyll]
 계정 및 앱 생성 과정은 생략.    
 생성을 완료하고 나면 다음과 같이 태그 이용에 대한 화면을 확인할 수 있다.
 
-![image-20220207083258339](../assets/img/image-20220207083258339.png)
+![image-20220207083258339](/assets/img/image-20220207083258339.png)
 
 추적용 태그 삽입에는 [Google 태그 관리자와 gtag.js](https://support.google.com/tagmanager/answer/7582054) 두 가지 방식이 있는 것 같은데, 우선은 별도의 작업 없이 빨리 설치하고 싶었기에 gtag.js를 이용하기로 했다. 역시나 언제든지 전환할 수 있다는 아래 문구를 확인한 후 말이다.
 
@@ -43,9 +43,9 @@ _includes 아래의 [analytics.html](https://github.com/mmistakes/minimal-mistak
 
 페이지 접속 시 gtag.js가 접속 내용을 구글로 전송한다.
 
-![image-20220207084635927](../assets/img/image-20220207084635927.png)
+![image-20220207084635927](/assets/img/image-20220207084635927.png)
 
 추적된 내용을 애널리틱스 보고서에서 확인 가능하다.
 
-![image-20220207084317223](../assets/img/image-20220207084317223.png)
+![image-20220207084317223](/assets/img/image-20220207084317223.png)
 
