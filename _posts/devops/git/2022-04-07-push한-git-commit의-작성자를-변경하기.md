@@ -2,6 +2,7 @@
 title: push된 git commit의 작성자를 변경하기
 date: 2022-04-07 22:22:34 +0900
 tags: [git]
+categories: [git]
 ---
 
 회사 컴퓨터로 작업을 하다보니 git의 global로 설정되어 있는 username과 useremail이 개인 프로젝트에도 설정된 채로 커밋이 올라가 버린 것을 발견했다. 이를 바꾸는 과정을 포스팅하도록 하자.

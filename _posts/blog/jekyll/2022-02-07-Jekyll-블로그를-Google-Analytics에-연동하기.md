@@ -2,6 +2,7 @@
 title: Jekyll 블로그를 Google Analytics에 연동하기
 date: 2022-02-07 08:49:00 +0900
 tags: [jekyll, google-analytics]
+categories: [jekyll]
 ---
 
 # Google Analytics 계정 만들기

@@ -2,6 +2,7 @@
 title: push한 commit의 일자 변경하기
 date: 2022-02-17 01:17:00 +0900
 tags: [git]
+categories: [git]
 ---
 
 # git log

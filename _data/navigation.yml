@@ -14,75 +14,75 @@ docs:
   - title: Blog
     children:
       - title: "Jekyll Blog"
-        url: /blog/jekyll/
+        url: /jekyll/
   - title: PjM/Teamwork
     children:
       - title: "Collaboration Software"
-        url: /pjm/collaboration-software/
+        url: /collaboration-software/
   - title: Web
     children:
       - title: "Google Search Console"
-        url: /web/google-search-console/
+        url: /google-search-console/
       - title: "Google Analytics"
-        url: /web/google-analytics/
+        url: /google-analytics/
       - title: "SEO"
-        url: /web/seo/
+        url: /seo/
   - title: Frontend
     children:
       - title: "HTML"
-        url: /frontend/html/
+        url: /html/
       - title: "CSS"
-        url: /frontend/css/
+        url: /css/
       - title: "Javascript"
-        url: /frontend/javascript/
+        url: /javascript/
   - title: Backend
     children:
       - title: "Java"
-        url: /backend/java/
+        url: /java/
       - title: "PHP"
-        url: /backend/php/
+        url: /php/
       - title: "Python"
-        url: /backend/python/
+        url: /python/
       - title: "Shell"
-        url: /backend/shell/
+        url: /shell/
   - title: DevOps/Infra
     children:
       - title: "Git"
-        url: /devops/git/
+        url: /git/
       - title: "Jenkins"
-        url: /devops/jenkins/
+        url: /jenkins/
       - title: "Docker"
-        url: /devops/docker/
+        url: /docker/
       - title: "Ansible"
-        url: /devops/ansible/
+        url: /ansible/
       - title: "Grafana"
-        url: /devops/grafana
+        url: /grafana
   - title: IDE/Tools
     children:
       - title: "Visual Studio Code"
-        url: /tools/vs-code/
+        url: /vs-code/
       - title: "Postman"
-        url: /tools/postman/
+        url: /postman/
       - title: "Selenium"
-        url: /tools/selenium/
+        url: /selenium/
   - title: Data
     children:
       - title: "AI"
-        url: /data/ai/
+        url: /ai/
       - title: "Elasticsearch"
-        url: /data/elasticsearch/
+        url: /elasticsearch/
       - title: "MySQL"
-        url: /data/mysql/
+        url: /mysql/
       - title: "Oracle"
-        url: /data/oracle/
+        url: /oracle/
       - title: "SQL"
-        url: /data/sql/
+        url: /sql/
   - title: Cloud
     children:
       - title: "AWS"
-        url: /cloud/aws/
+        url: /aws/
       - title: "Salesforce"
-        url: /cloud/salesforce/
+        url: /salesforce/
   - title: Computer Science
     children:
       - title: "Database"

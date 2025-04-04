@@ -2,6 +2,7 @@
 title: Jekyll 블로그를 Google Search Console에 등록하는 방법
 date: 2025-04-02 23:00:00 +0900
 tags: [jekyll, google-search-console]
+categories: [jekyll]
 ---
 
 # 1. Google Search Console 에 URL 등록

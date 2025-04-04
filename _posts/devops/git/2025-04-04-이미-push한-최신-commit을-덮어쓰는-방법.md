@@ -2,6 +2,7 @@
 title: 이미 push한 최신 commit을 덮어쓰는 방법
 date: 2025-04-04 01:57:00 +0900
 tags: [git]
+categories: [git]
 ---
 
 블로그 포스팅을 정리하고 git push를 하고나면, 아차 깜빡했다 싶을때가 있다. 예를 들면 블로그 포스팅에 categories를 잘못 지정했다거나. 그런데 그런 수정사항 만으로 commit을 한 개 더 쌓기가 싫다. 기왕이면 이미 push해버린 commit을 취소하고 새로운 commit으로 덮어써서 깔끔하게 commit 목록을 정리하고 싶다. 이럴 때 쓸 수 있는 git command를 정리한다. (당연하게 외우고 있던건데 git좀 안만진지 시간좀 됐다고 그새 잊어버렸다.)
