@@ -36,7 +36,7 @@ docs:
       - title: "Javascript"
         url: /javascript/
       - title: "React"
-	url: /react/
+        url: /react/
   - title: Backend
     children:
       - title: "Java"
