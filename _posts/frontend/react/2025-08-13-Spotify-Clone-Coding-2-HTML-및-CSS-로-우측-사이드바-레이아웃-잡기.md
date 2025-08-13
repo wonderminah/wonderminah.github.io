@@ -1,7 +1,7 @@
 ---
 title: Spotify Clone Coding (2) HTML 및 CSS 로 우측 사이드바 레이아웃 잡기
 date: 2025-08-13 02:29:00 +0900
-tags: [html, css, javascript, react]
+tags: [html, css]
 categories: [react]
 ---
 
